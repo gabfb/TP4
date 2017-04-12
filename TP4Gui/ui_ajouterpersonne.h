@@ -15,6 +15,7 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QDialog>
 #include <QtGui/QHeaderView>
+#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -26,8 +27,8 @@ class Ui_AjouterPersonneClass
 public:
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
-    QPushButton *AjouterEntraineur;
-    QPushButton *AjouterJoueur;
+    QLineEdit *typelineedit;
+    QPushButton *pushButtonOK;
 
     void setupUi(QDialog *AjouterPersonneClass)
     {
@@ -42,15 +43,15 @@ public:
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        AjouterEntraineur = new QPushButton(verticalLayoutWidget);
-        AjouterEntraineur->setObjectName(QString::fromUtf8("AjouterEntraineur"));
+        typelineedit = new QLineEdit(verticalLayoutWidget);
+        typelineedit->setObjectName(QString::fromUtf8("typelineedit"));
 
-        verticalLayout->addWidget(AjouterEntraineur);
+        verticalLayout->addWidget(typelineedit);
 
-        AjouterJoueur = new QPushButton(verticalLayoutWidget);
-        AjouterJoueur->setObjectName(QString::fromUtf8("AjouterJoueur"));
+        pushButtonOK = new QPushButton(verticalLayoutWidget);
+        pushButtonOK->setObjectName(QString::fromUtf8("pushButtonOK"));
 
-        verticalLayout->addWidget(AjouterJoueur);
+        verticalLayout->addWidget(pushButtonOK);
 
 
         retranslateUi(AjouterPersonneClass);
@@ -61,8 +62,7 @@ public:
     void retranslateUi(QDialog *AjouterPersonneClass)
     {
         AjouterPersonneClass->setWindowTitle(QApplication::translate("AjouterPersonneClass", "AjouterPersonne", 0, QApplication::UnicodeUTF8));
-        AjouterEntraineur->setText(QApplication::translate("AjouterPersonneClass", "Entraineur", 0, QApplication::UnicodeUTF8));
-        AjouterJoueur->setText(QApplication::translate("AjouterPersonneClass", "Joueur", 0, QApplication::UnicodeUTF8));
+        pushButtonOK->setText(QApplication::translate("AjouterPersonneClass", "OK", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

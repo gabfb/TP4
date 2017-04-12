@@ -14,10 +14,10 @@ public:
     ~TP4Gui();
 
 private slots:
-    void SupprimerPersonne();
-    void AjouterPersonne();
-    void AjouterJoueur();
-    void AjouterEntraineur();
+    void SupprimerPersonnefct();
+    void AjouterPersonnefct();
+    void AjouterJoueurfct();
+    void AjouterEntraineurfct();
 
 
 

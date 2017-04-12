@@ -1,6 +1,6 @@
-16:05:02 **** Incremental Build of configuration Debug for project TP4Test ****
+17:48:50 **** Incremental Build of configuration Debug for project TP4Test ****
 make all 
 make: rien à faire pour « all ».
 
-16:05:02 Build Finished (took 177ms)
+17:48:50 Build Finished (took 109ms)
 

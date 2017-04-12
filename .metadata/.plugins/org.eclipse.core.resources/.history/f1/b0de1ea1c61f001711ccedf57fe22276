@@ -1,0 +1,23 @@
+#include "ajouterpersonne.h"
+
+AjouterPersonne::AjouterPersonne(QWidget *parent)
+    : QDialog(parent)
+{
+	ui.setupUi(this);
+	QObject::connect(ui.pushButtonOK,SIGNAL(clicked),this,SLOT(validerFormulaire));
+}
+
+AjouterPersonne::~AjouterPersonne()
+{
+
+}
+
+QString AjouterPersonne::reqType() const
+{
+ return ui.typelineedit->text();
+}
+
+void AjouterPersonne::validerFormulaire() const
+{
+   accept();
+}

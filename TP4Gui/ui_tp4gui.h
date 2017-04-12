@@ -94,6 +94,7 @@ public:
         TP4GuiClass->setStatusBar(statusbar);
 
         retranslateUi(TP4GuiClass);
+        QObject::connect(Quitter, SIGNAL(clicked()), TP4GuiClass, SLOT(close()));
 
         QMetaObject::connectSlotsByName(TP4GuiClass);
     } // setupUi

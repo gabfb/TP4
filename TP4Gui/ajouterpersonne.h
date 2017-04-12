@@ -11,7 +11,9 @@ class AjouterPersonne : public QDialog
 public:
     AjouterPersonne(QWidget *parent = 0);
     ~AjouterPersonne();
-
+    QString reqType() const;
+private slots:
+    void validerFormulaire();
 private:
     Ui::AjouterPersonneClass ui;
 };

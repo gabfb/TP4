@@ -1,207 +1,244 @@
-13:57:30 **** Build of configuration Debug for project TP4Lib ****
-make all 
-Building file: ../Annuaire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
-Finished building: ../Annuaire.cpp
- 
-Building file: ../Entraineur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entraineur.d" -MT"Entraineur.o" -o "Entraineur.o" "../Entraineur.cpp"
-Finished building: ../Entraineur.cpp
- 
-Building file: ../Joueur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Joueur.d" -MT"Joueur.o" -o "Joueur.o" "../Joueur.cpp"
-Finished building: ../Joueur.cpp
- 
-Building file: ../Personne.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
-Finished building: ../Personne.cpp
- 
-Building file: ../PersonneException.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
-Finished building: ../PersonneException.cpp
- 
-Building target: libTP4Lib.a
-Invoking: GCC Archiver
-ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
-Finished building target: libTP4Lib.a
- 
-13:58:35 **** Build of configuration Debug for project TP4Test ****
-make all 
-Building file: ../EntraineurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
-Finished building: ../EntraineurTesteur.cpp
- 
-Building file: ../JoueurTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
-Finished building: ../JoueurTesteur.cpp
- 
-Building file: ../PersonneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
-Finished building: ../PersonneTesteur.cpp
- 
-Building target: TP4Test
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
-Finished building target: TP4Test
- 
-/usr/bin/qmake -recursive CONFIG+=debug_and_release TP4Gui.pro 
-14:54:50 **** Clean-only build of project TP4Gui ****
-make clean 
-make -f Makefile.Release clean
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-rm -f release/moc_tp4gui.cpp
-rm -f ui_tp4gui.h
-rm -f release/main.o release/tp4gui.o release/moc_tp4gui.o
-rm -f *~ core *.core
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-make -f Makefile.Debug clean
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-rm -f debug/moc_tp4gui.cpp
-rm -f ui_tp4gui.h
-rm -f debug/main.o debug/tp4gui.o debug/moc_tp4gui.o
-rm -f *~ core *.core
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-14:54:51 **** Build of project TP4Gui ****
+17:29:11 **** Incremental Build of project TP4Gui ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-/usr/lib/i386-linux-gnu/qt4/bin/uic tp4gui.ui -o ui_tp4gui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/tp4gui.o tp4gui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. tp4gui.h -o debug/moc_tp4gui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_tp4gui.o debug/moc_tp4gui.cpp
-g++  -o TP4Gui debug/main.o debug/tp4gui.o debug/moc_tp4gui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'TP4Gui' && test -f TP4Gui.gdb-index && objcopy --add-section '.gdb_index=TP4Gui.gdb-index' --set-section-flags '.gdb_index=readonly' 'TP4Gui' 'TP4Gui' && rm -f TP4Gui.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-14:55:46 **** Incremental Build of configuration Debug for project TP4Lib ****
-make all 
-make: rien à faire pour « all ».
-14:55:47 **** Incremental Build of configuration Debug for project TP4Test ****
-make all 
-make: rien à faire pour « all ».
-14:55:48 **** Build of configuration Debug for project TP4main ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: TP4main
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
-Finished building target: TP4main
- 
-14:55:49 **** Build of configuration Debug for project TestyFuck ****
-make all 
-Building target: TestyFuck
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./mainTestyFuck.o   -lTP4Lib
-Finished building target: TestyFuck
- 
-14:56:59 **** Incremental Build of configuration Debug for project TP4Lib ****
-make all 
-make: rien à faire pour « all ».
-14:57:02 **** Incremental Build of configuration Debug for project TP4Test ****
-make all 
-make: rien à faire pour « all ».
-14:57:02 **** Incremental Build of configuration Debug for project TP4main ****
-make all 
-make: rien à faire pour « all ».
-14:57:03 **** Incremental Build of configuration Debug for project TestyFuck ****
-make all 
-make: rien à faire pour « all ».
-14:58:27 **** Incremental Build of project TP4Gui ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-15:05:02 **** Incremental Build of project TP4Gui ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile TP4Gui.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-15:25:31 **** Incremental Build of project TP4Gui ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-/usr/lib/i386-linux-gnu/qt4/bin/uic tp4gui.ui -o ui_tp4gui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/tp4gui.o tp4gui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. tp4gui.h -o debug/moc_tp4gui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/moc_tp4gui.o debug/moc_tp4gui.cpp
-g++  -o TP4Gui debug/main.o debug/tp4gui.o debug/moc_tp4gui.o    -L/usr/lib/i386-linux-gnu ../TP4Lib/Debug/libTP4Lib.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'TP4Gui' && test -f TP4Gui.gdb-index && objcopy --add-section '.gdb_index=TP4Gui.gdb-index' --set-section-flags '.gdb_index=readonly' 'TP4Gui' 'TP4Gui' && rm -f TP4Gui.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-16:04:40 **** Incremental Build of project TP4Gui ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile TP4Gui.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
-/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerpersonne.ui -o ui_supprimerpersonne.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterentraineur.ui -o ui_ajouterentraineur.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjoueur.ui -o ui_ajouterjoueur.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterpersonne.ui -o ui_ajouterpersonne.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/supprimerpersonne.o supprimerpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterentraineur.o ajouterentraineur.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterjoueur.o ajouterjoueur.cpp
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/tp4gui.o tp4gui.cpp
-tp4gui.cpp: In member function ‘void TP4Gui::AjouterPersonne()’:
-tp4gui.cpp:22:21: error: expected ‘;’ before ‘instanceFenetre’
-     AjouterPersonne instanceFenetre(this);
-                     ^
-tp4gui.cpp:22:42: error: invalid use of non-static member function
-     AjouterPersonne instanceFenetre(this);
-                                          ^
-tp4gui.cpp:23:8: error: ‘instanceFenetre’ was not declared in this scope
-     if(instanceFenetre.)
-        ^
-tp4gui.cpp:23:24: error: expected unqualified-id before ‘)’ token
-     if(instanceFenetre.)
-                        ^
-Makefile.Debug:236 : la recette pour la cible « debug/tp4gui.o » a échouée
+ajouterpersonne.cpp: In member function ‘void AjouterPersonne::validerFormulaire() const’:
+ajouterpersonne.cpp:22:11: error: passing ‘const AjouterPersonne’ as ‘this’ argument discards qualifiers [-fpermissive]
+    accept();
+           ^
+In file included from /usr/include/qt4/QtGui/QDialog:1:0,
+                 from ajouterpersonne.h:4,
+                 from ajouterpersonne.cpp:1:
+/usr/include/qt4/QtGui/qdialog.h:102:18: note:   in call to ‘virtual void QDialog::accept()’
+     virtual void accept();
+                  ^
+Makefile.Debug:224 : la recette pour la cible « debug/ajouterpersonne.o » a échouée
+make[1]: *** [debug/ajouterpersonne.o] Erreur 1
+make: *** [debug] Erreur 2
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
 Makefile:50 : la recette pour la cible « debug » a échouée
-make[1]: *** [debug/tp4gui.o] Erreur 1
+17:30:13 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
+ajouterpersonne.cpp: In member function ‘void AjouterPersonne::validerFormulaire() const’:
+ajouterpersonne.cpp:23:11: error: passing ‘const AjouterPersonne’ as ‘this’ argument discards qualifiers [-fpermissive]
+    accept();
+           ^
+In file included from /usr/include/qt4/QtGui/QDialog:1:0,
+                 from ajouterpersonne.h:4,
+                 from ajouterpersonne.cpp:1:
+/usr/include/qt4/QtGui/qdialog.h:102:18: note:   in call to ‘virtual void QDialog::accept()’
+     virtual void accept();
+                  ^
+make[1]: *** [debug/ajouterpersonne.o] Erreur 1
 make: *** [debug] Erreur 2
-16:05:01 **** Incremental Build of configuration Debug for project TP4Lib ****
+Makefile.Debug:224 : la recette pour la cible « debug/ajouterpersonne.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+Makefile:50 : la recette pour la cible « debug » a échouée
+17:30:15 **** Incremental Build of configuration Debug for project TP4Lib ****
 make all 
 make: rien à faire pour « all ».
-16:05:02 **** Incremental Build of configuration Debug for project TP4Test ****
+17:30:16 **** Incremental Build of configuration Debug for project TP4Test ****
 make all 
 make: rien à faire pour « all ».
-16:05:03 **** Incremental Build of configuration Debug for project TP4main ****
+17:30:16 **** Incremental Build of configuration Debug for project TP4main ****
 make all 
 make: rien à faire pour « all ».
-16:05:03 **** Incremental Build of configuration Debug for project TestyFuck ****
+17:30:17 **** Incremental Build of configuration Debug for project TestyFuck ****
 make all 
 make: rien à faire pour « all ».
-16:08:29 **** Incremental Build of project TP4Gui ****
+17:31:50 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
+ajouterpersonne.cpp:21:43: error: no ‘void AjouterPersonne::validerFormulaire() const’ member function declared in class ‘AjouterPersonne’
+ void AjouterPersonne::validerFormulaire() const
+                                           ^
+Makefile.Debug:224 : la recette pour la cible « debug/ajouterpersonne.o » a échouée
+make[1]: *** [debug/ajouterpersonne.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+17:31:52 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:31:53 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:31:55 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:31:55 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+17:32:03 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/tp4gui.o tp4gui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. ajouterpersonne.h -o debug/moc_ajouterpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/moc_ajouterpersonne.o debug/moc_ajouterpersonne.cpp
+g++  -o TP4Gui debug/supprimerpersonne.o debug/ajouterentraineur.o debug/ajouterjoueur.o debug/ajouterpersonne.o debug/main.o debug/tp4gui.o debug/moc_supprimerpersonne.o debug/moc_ajouterentraineur.o debug/moc_ajouterjoueur.o debug/moc_ajouterpersonne.o debug/moc_tp4gui.o    -L/usr/lib/i386-linux-gnu ../TP4Lib/Debug/libTP4Lib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'TP4Gui' && test -f TP4Gui.gdb-index && objcopy --add-section '.gdb_index=TP4Gui.gdb-index' --set-section-flags '.gdb_index=readonly' 'TP4Gui' 'TP4Gui' && rm -f TP4Gui.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+17:32:11 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:32:11 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:32:12 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:32:12 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+17:34:25 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
+g++  -o TP4Gui debug/supprimerpersonne.o debug/ajouterentraineur.o debug/ajouterjoueur.o debug/ajouterpersonne.o debug/main.o debug/tp4gui.o debug/moc_supprimerpersonne.o debug/moc_ajouterentraineur.o debug/moc_ajouterjoueur.o debug/moc_ajouterpersonne.o debug/moc_tp4gui.o    -L/usr/lib/i386-linux-gnu ../TP4Lib/Debug/libTP4Lib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'TP4Gui' && test -f TP4Gui.gdb-index && objcopy --add-section '.gdb_index=TP4Gui.gdb-index' --set-section-flags '.gdb_index=readonly' 'TP4Gui' 'TP4Gui' && rm -f TP4Gui.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+17:34:34 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:34:34 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:34:34 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:34:35 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+17:39:08 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
+ajouterpersonne.cpp: In member function ‘void AjouterPersonne::validerFormulaire() const’:
+ajouterpersonne.cpp:23:20: error: passing ‘const AjouterPersonne’ as ‘this’ argument discards qualifiers [-fpermissive]
+    QDialog::accept();
+                    ^
+In file included from /usr/include/qt4/QtGui/QDialog:1:0,
+                 from ajouterpersonne.h:4,
+                 from ajouterpersonne.cpp:1:
+/usr/include/qt4/QtGui/qdialog.h:102:18: note:   in call to ‘virtual void QDialog::accept()’
+     virtual void accept();
+                  ^
+Makefile.Debug:224 : la recette pour la cible « debug/ajouterpersonne.o » a échouée
+make[1]: *** [debug/ajouterpersonne.o] Erreur 1
+make: *** [debug] Erreur 2
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+Makefile:50 : la recette pour la cible « debug » a échouée
+17:39:11 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:39:11 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:39:11 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:39:12 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+17:39:37 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/tp4gui.o tp4gui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. ajouterpersonne.h -o debug/moc_ajouterpersonne.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/moc_ajouterpersonne.o debug/moc_ajouterpersonne.cpp
+g++  -o TP4Gui debug/supprimerpersonne.o debug/ajouterentraineur.o debug/ajouterjoueur.o debug/ajouterpersonne.o debug/main.o debug/tp4gui.o debug/moc_supprimerpersonne.o debug/moc_ajouterentraineur.o debug/moc_ajouterjoueur.o debug/moc_ajouterpersonne.o debug/moc_tp4gui.o    -L/usr/lib/i386-linux-gnu ../TP4Lib/Debug/libTP4Lib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'TP4Gui' && test -f TP4Gui.gdb-index && objcopy --add-section '.gdb_index=TP4Gui.gdb-index' --set-section-flags '.gdb_index=readonly' 'TP4Gui' 'TP4Gui' && rm -f TP4Gui.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+17:39:45 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:39:46 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:39:46 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:39:46 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+17:44:44 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/ajouterpersonne.o ajouterpersonne.cpp
+g++  -o TP4Gui debug/supprimerpersonne.o debug/ajouterentraineur.o debug/ajouterjoueur.o debug/ajouterpersonne.o debug/main.o debug/tp4gui.o debug/moc_supprimerpersonne.o debug/moc_ajouterentraineur.o debug/moc_ajouterjoueur.o debug/moc_ajouterpersonne.o debug/moc_tp4gui.o    -L/usr/lib/i386-linux-gnu ../TP4Lib/Debug/libTP4Lib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'TP4Gui' && test -f TP4Gui.gdb-index && objcopy --add-section '.gdb_index=TP4Gui.gdb-index' --set-section-flags '.gdb_index=readonly' 'TP4Gui' 'TP4Gui' && rm -f TP4Gui.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+17:44:47 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:44:48 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:44:48 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:44:48 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+17:48:03 **** Incremental Build of project TP4Gui ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/tp4gui.o tp4gui.cpp
-tp4gui.cpp: In member function ‘void TP4Gui::AjouterPersonne()’:
-tp4gui.cpp:23:2: error: expected ‘;’ before ‘AjouterPersonne’
-  AjouterPersonne instanceFenetre(this);
-  ^
-tp4gui.cpp:24:8: error: ‘instanceFenetre’ was not declared in this scope
-     if(instanceFenetre.exec())
-        ^
-Makefile.Debug:236 : la recette pour la cible « debug/tp4gui.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+tp4gui.cpp: In member function ‘void TP4Gui::AjouterJoueurfct()’:
+tp4gui.cpp:54:4: error: ‘AjouterJoueur’ was not declared in this scope
+    AjouterJoueur instanceFenetre(this);
+    ^
+tp4gui.cpp:55:7: error: ‘instanceFenetre’ was not declared in this scope
+    if(instanceFenetre.exec())
+       ^
 make[1]: *** [debug/tp4gui.o] Erreur 1
+Makefile.Debug:236 : la recette pour la cible « debug/tp4gui.o » a échouée
 make: *** [debug] Erreur 2
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
 Makefile:50 : la recette pour la cible « debug » a échouée
+17:48:05 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:48:06 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:48:07 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:48:07 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+17:48:46 **** Incremental Build of project TP4Gui ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../TP4Lib -Idebug -I. -o debug/tp4gui.o tp4gui.cpp
+g++  -o TP4Gui debug/supprimerpersonne.o debug/ajouterentraineur.o debug/ajouterjoueur.o debug/ajouterpersonne.o debug/main.o debug/tp4gui.o debug/moc_supprimerpersonne.o debug/moc_ajouterentraineur.o debug/moc_ajouterjoueur.o debug/moc_ajouterpersonne.o debug/moc_tp4gui.o    -L/usr/lib/i386-linux-gnu ../TP4Lib/Debug/libTP4Lib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'TP4Gui' && test -f TP4Gui.gdb-index && objcopy --add-section '.gdb_index=TP4Gui.gdb-index' --set-section-flags '.gdb_index=readonly' 'TP4Gui' 'TP4Gui' && rm -f TP4Gui.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4/TP4Gui »
+17:48:49 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+17:48:50 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+17:48:50 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+17:48:50 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».

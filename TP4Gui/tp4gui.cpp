@@ -1,5 +1,7 @@
 #include "tp4gui.h"
 #include "ajouterpersonne.h"
+#include "ajouterentraineur.h"
+#include "ajouterjoueur.h"
 #include "supprimerpersonne.h"
 
 
@@ -8,8 +10,9 @@ TP4Gui::TP4Gui(QWidget *parent)
 {
 	ui.setupUi(this);
 	m_annuaire.asgNomClub("Les Gagnants");
-	QObject::connect(ui.AjouterPersonne,SIGNAL(clicked()),this,SLOT(AjouterPersonne()));
-	QObject::connect(ui.SupprimerPersonne,SIGNAL(clicked()),this,SLOT(SupprimerPersonne()));
+	ui.AnnuaireTexte->setText(m_annuaire.reqAnnuaireFormate().c_str());
+	QObject::connect(ui.AjouterPersonne,SIGNAL(clicked()),this,SLOT(AjouterPersonnefct()));
+	QObject::connect(ui.SupprimerPersonne,SIGNAL(clicked()),this,SLOT(SupprimerPersonnefct()));
 }
 
 TP4Gui::~TP4Gui()
@@ -17,18 +20,53 @@ TP4Gui::~TP4Gui()
 
 }
 
-void TP4Gui::AjouterPersonne()
+void TP4Gui::AjouterPersonnefct()
 {
-    AjouterPersonne()
-	AjouterPersonne instanceFenetre(this);
-    if(instanceFenetre.exec())
-    {
+  AjouterPersonne instanceFenetre(this);
+  if(instanceFenetre.exec())
+  {
+	  if(instanceFenetre.reqType().toStdString() == "entraineur")
+	  {
+		  AjouterEntraineurfct();
+	  }
+	  else
+	  {
+		  AjouterJoueurfct();
+	  }
 
-    }
+  }
+
+
 
 }
 
-void TP4Gui::SupprimerPersonne()
+void TP4Gui::AjouterEntraineurfct()
 {
+	  AjouterEntraineur instanceFenetre(this);
+	  if(instanceFenetre.exec())
+	  {
 
+	  }
+	  ui.AnnuaireTexte->setText(m_annuaire.reqAnnuaireFormate().c_str());
+
+}
+void TP4Gui::AjouterJoueurfct()
+{
+	  AjouterJoueur instanceFenetre(this);
+	  if(instanceFenetre.exec())
+	  {
+
+	  }
+	  ui.AnnuaireTexte->setText(m_annuaire.reqAnnuaireFormate().c_str());
+
+}
+
+void TP4Gui::SupprimerPersonnefct()
+{
+	  SupprimerPersonne instanceFenetre(this);
+	  if(instanceFenetre.exec())
+	  {
+
+	  }
+	  ui.AnnuaireTexte->setText(m_annuaire.reqAnnuaireFormate().c_str());
 }

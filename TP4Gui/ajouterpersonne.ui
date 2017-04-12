@@ -24,16 +24,12 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="AjouterEntraineur">
-      <property name="text">
-       <string>Entraineur</string>
-      </property>
-     </widget>
+     <widget class="QLineEdit" name="typelineedit"/>
     </item>
     <item>
-     <widget class="QPushButton" name="AjouterJoueur">
+     <widget class="QPushButton" name="pushButtonOK">
       <property name="text">
-       <string>Joueur</string>
+       <string>OK</string>
       </property>
      </widget>
     </item>
