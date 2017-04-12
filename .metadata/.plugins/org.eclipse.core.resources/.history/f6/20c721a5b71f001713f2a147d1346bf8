@@ -1,0 +1,19 @@
+#ifndef SUPPRIMERPERSONNE_H
+#define SUPPRIMERPERSONNE_H
+
+#include <QtGui/QWidget>
+#include "ui_supprimerpersonne.h"
+
+class SupprimerPersonne : public QWidget
+{
+    Q_OBJECT
+
+public:
+    SupprimerPersonne(QWidget *parent = 0);
+    ~SupprimerPersonne();
+
+private:
+    Ui::SupprimerPersonneClass ui;
+};
+
+#endif // SUPPRIMERPERSONNE_H
