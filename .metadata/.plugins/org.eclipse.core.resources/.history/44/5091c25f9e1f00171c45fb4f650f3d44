@@ -1,0 +1,26 @@
+#include <string>
+#include <stdexcept>
+
+namespace util
+{
+class PersonneException : public std::runtime_error
+{
+   Public:
+      PersonneException (const std::string& raison);
+
+};
+
+class PersonneDejaPresenteException : public PersonneException
+{
+   Public:
+      PersonneDejaPresenteException(const std::string& raison);
+}
+
+class PersonneAbsenteException : public PersonneException
+{
+   Public:
+      PersonneAbsenteException (const std::string& raison);
+
+}
+
+}

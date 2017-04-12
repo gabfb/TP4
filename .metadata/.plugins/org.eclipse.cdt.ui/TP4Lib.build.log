@@ -1,0 +1,16 @@
+13:42:00 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+
+13:42:00 Build Finished (took 373ms)
+

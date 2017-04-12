@@ -1,0 +1,10 @@
+14:12:56 **** Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++  -o "TP1"  ./fonctionsUtilitaires.o ./programmePrincipal.o   
+Finished building target: TP1
+ 
+
+14:12:56 Build Finished (took 132ms)
+

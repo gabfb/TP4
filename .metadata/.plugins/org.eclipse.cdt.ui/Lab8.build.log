@@ -1,0 +1,16 @@
+13:26:56 **** Build of configuration Debug for project Lab8 ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libLab8.a
+Invoking: GCC Archiver
+ar -r  "libLab8.a"  ./Sphere.o   
+ar: création de libLab8.a
+Finished building target: libLab8.a
+ 
+
+13:26:57 Build Finished (took 1s.398ms)
+

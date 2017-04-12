@@ -1,0 +1,115 @@
+/**
+ * \file Annuaire.cpp
+ * \brief 
+ * \author François Levasseur : frlev144 : 111 098 378
+ * \date 2017-03-28 
+ */
+
+#include "Annuaire.h"
+#include "ContratException.h"
+#include "validationFormat.h"
+#include <string>
+#include <sstream>
+#include <vector>
+
+namespace tp {
+
+/**
+ * \brief Constructeur par défaut de la classe Annuaire
+ * \return Instance de la classe Annuaire avec un nom vide
+ *
+ */
+Annuaire::Annuaire() : m_nomClub(""){}
+
+/**
+ * \brief Constructeur de la classe Annuaire
+ * \param p_nomClub : string représentant le nom de l'équipe de hockey
+ * \return Instance de la classe Annuaire
+ *
+ */
+Annuaire::Annuaire(const std::string& p_nomClub)
+	: m_nomClub (p_nomClub)
+{
+	PRECONDITION(p_nomClub.empty() == false);
+	POSTCONDITION(m_nomClub == p_nomClub);
+	INVARIANTS();
+}
+
+/**
+ * \brief Mutateur de l'attribut m_nomCLub
+ * \param p_nomClub : string représentant le nom de l'équipe de hockey
+ * \return Instance de la classe Annuaire
+ *
+ */
+void Annuaire::asgNomClub(const std::string& p_nomClub) {
+	PRECONDITION(p_nomClub.empty() == false);
+	m_nomClub = p_nomClub;
+	POSTCONDITION(m_nomClub == p_nomClub);
+	INVARIANTS();
+}
+
+/**
+ * \brief Destructeur de la classe annuaire. Fait un delete sur tout les membres de l'annuaire
+ *
+ */
+Annuaire::~Annuaire() {
+	for(std::vector<Personne*>::iterator it = m_vMembres.begin();
+			it != m_vMembres.end() ; it++)
+	{
+		delete *it;
+	}
+	m_vMembres.clear();
+}
+
+/**
+ * \brief accesseur de l'attribut m_nomClub
+ * \return l'attribut m_nomClub
+ *
+ */
+const std::string& Annuaire::reqNomClub() const {
+	return m_nomClub;
+}
+
+/**
+ * \brief méthode qui ajoute un pointeur de la classe Personne dans le vecteur m_vMembres
+ *
+ */
+void Annuaire::ajouterPersonne(const Personne& p_personne) {
+	m_vMembres.push_back(p_personne.clone());
+	INVARIANTS();
+}
+
+/**
+ * \brief Méthode qui formate l'objet Annuaire pour l'affichage
+ * \brief Permet l'affichage de toutes les références à Personne contenues dans le vecteur m_vMembres
+ * \return string formatée pour l'affichage de l'objet Annuaire
+ *
+ */
+std::string Annuaire::reqAnnuaireFormate() const{
+
+	std::ostringstream os;
+
+	os << "Club : " << m_nomClub << "\n------------------\n";
+
+	for(std::size_t i = 0; i < m_vMembres.size() ; i++)
+	{
+		os << m_vMembres[i] -> reqPersonneFormate() << "\n";
+	}
+
+	return os.str();
+
+}
+
+/**
+ * \brief méthode ou on définie les invariants de la classe
+ * \brief ne retourne rien mais déclanche des exceptions
+ * \brief permet de s'assurer qu'une instance est valide en tout temps
+ *
+ */
+void Annuaire::verifieInvariant() const {
+
+}
+
+} /* namespace tp */
+
+

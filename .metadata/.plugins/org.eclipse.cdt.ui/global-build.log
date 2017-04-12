@@ -1,0 +1,2947 @@
+15:58:44 **** Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘bool tp::Annuaire::PersonneEstDejaPresente(const tp::Personne&) const’:
+../Annuaire.cpp:142:60: error: conversion from ‘std::vector<tp::Personne*>::const_iterator {aka __gnu_cxx::__normal_iterator<tp::Personne* const*, std::vector<tp::Personne*> >}’ to non-scalar type ‘std::vector<tp::Personne*>::iterator {aka __gnu_cxx::__normal_iterator<tp::Personne**, std::vector<tp::Personne*> >}’ requested
+  for(std::vector<Personne*>::iterator it = m_vMembres.begin();
+                                                            ^
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+15:59:56 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building file: ../Entraineur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entraineur.d" -MT"Entraineur.o" -o "Entraineur.o" "../Entraineur.cpp"
+Finished building: ../Entraineur.cpp
+ 
+Building file: ../Joueur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Joueur.d" -MT"Joueur.o" -o "Joueur.o" "../Joueur.cpp"
+Finished building: ../Joueur.cpp
+ 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+15:59:58 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+15:59:59 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+22:14:31 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+22:14:33 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+../AnnuaireTesteur.cpp: In member function ‘virtual void AnnuaireTest_asgNomClub_Test::TestBody()’:
+../AnnuaireTesteur.cpp:68:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+subdir.mk:27 : la recette pour la cible « AnnuaireTesteur.o » a échouée
+make: *** [AnnuaireTesteur.o] Erreur 1
+22:14:35 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+22:14:46 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+22:14:49 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+10:12:42 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+10:13:08 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+10:13:10 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+10:25:45 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+10:43:48 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+10:44:20 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+11:22:49 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+11:22:49 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+11:22:51 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+11:22:53 **** Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:15:1: error: stray ‘\302’ in program
+ int main() {
+ ^
+../main.cpp:15:1: error: stray ‘\240’ in program
+make: *** [main.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « main.o » a échouée
+11:25:15 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+11:25:15 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+11:25:15 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+11:25:15 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:15:1: error: stray ‘\302’ in program
+ int main() {
+ ^
+../main.cpp:15:1: error: stray ‘\240’ in program
+subdir.mk:18 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+11:25:52 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+11:25:52 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+11:25:52 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+11:25:52 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:26:13 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:26:35 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:17:2: error: ‘cout’ was not declared in this scope
+  cout << yolo.reqNomClub() << endl;
+  ^
+../main.cpp:17:31: error: ‘endl’ was not declared in this scope
+  cout << yolo.reqNomClub() << endl;
+                               ^
+subdir.mk:18 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+11:26:48 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:26:53 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+11:27:18 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:27:29 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:28:23 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:31:46 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:37:19 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:37:34 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:38:8: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘tp::Personne’)
+   cout << *(vecteurAsti[i]) << endl;
+        ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/5/ostream:108:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/5/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/5/ostream:117:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/5/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/5/ostream:127:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/5/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/5/ostream:166:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘long int’
+/usr/include/c++/5/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/5/ostream:170:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘long unsigned int’
+/usr/include/c++/5/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/5/ostream:174:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘bool’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:10:
+/usr/include/c++/5/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘short int’
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/5/ostream:181:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘short unsigned int’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:10:
+/usr/include/c++/5/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘int’
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/5/ostream:192:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘unsigned int’
+/usr/include/c++/5/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/5/ostream:201:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘long long int’
+subdir.mk:18 : la recette pour la cible « main.o » a échouée
+/usr/include/c++/5/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/5/ostream:205:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘long long unsigned int’
+/usr/include/c++/5/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/5/ostream:220:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘double’
+/usr/include/c++/5/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/5/ostream:224:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘float’
+/usr/include/c++/5/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/5/ostream:232:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘long double’
+/usr/include/c++/5/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/5/ostream:245:7: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘const void*’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:10:
+/usr/include/c++/5/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘tp::Personne’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/5/string:52:0,
+                 from /home/etudiant/Bureau/TP4/TP4Lib/Personne.h:11,
+                 from /home/etudiant/Bureau/TP4/TP4Lib/Annuaire.h:10,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:5172:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5172:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   ‘tp::Personne’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/5/ostream:497:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘tp::Personne’)
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:502:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘char’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:508:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘char’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/5/ostream:514:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘signed char’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/5/ostream:519:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘unsigned char’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/5/ostream:539:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   mismatched types ‘const _CharT*’ and ‘tp::Personne’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:10:
+/usr/include/c++/5/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘const char*’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/ostream:556:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘const char*’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/5/ostream:569:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘const signed char*’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:10:
+/usr/include/c++/5/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5/ostream:574:5: note:   template argument deduction/substitution failed:
+../main.cpp:38:27: note:   cannot convert ‘* vecteurAsti.std::vector<_Tp, _Alloc>::operator[]<tp::Personne*, std::allocator<tp::Personne*> >(i)’ (type ‘tp::Personne’) to type ‘const unsigned char*’
+   cout << *(vecteurAsti[i]) << endl;
+                           ^
+make: *** [main.o] Erreur 1
+11:37:51 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:38:51 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+11:40:33 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:02:08 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:02:52 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:05:57 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:06:01 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:06:46 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:07:03 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:08:17 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:08:31 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:09:25 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:09:59 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:10:04 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:10:10 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:10:35 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:11:47 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:11:55 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:13:05 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:13:17 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:13:57 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:14:05 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:18:20 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:19:11 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:19:18 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:19:27 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:19:43 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:19:54 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:20:14 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:22:44 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:23:46 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:24:09 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:24:47 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:25:23 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:25:50 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:26:11 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:26:13 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:26:14 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:26:14 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:26:15 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:26:17 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:26:39 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:26:43 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:26:43 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:26:44 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:26:44 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:26:46 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:27:04 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:27:58 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:28:00 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp:112:3: error: stray ‘\302’ in program
+   std::cout << (*it) -> reqNom() << (*it) -> reqPrenom() << (*it) -> reqDateNaissance() << "\n";
+   ^
+../Annuaire.cpp:112:3: error: stray ‘\240’ in program
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+12:28:00 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:28:00 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:28:01 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:28:02 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:28:06 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:28:50 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:28:53 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:28:53 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:28:54 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:28:54 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:28:55 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:30:20 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:30:31 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&, const util::Date&)’:
+../Annuaire.cpp:112:43: error: no match for ‘operator<<’ (operand types are ‘const string {aka const std::__cxx11::basic_string<char>}’ and ‘const string {aka const std::__cxx11::basic_string<char>}’)
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                           ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5/ostream:574:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/5/ostream:569:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/ostream:556:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/5/ostream:539:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/5/ostream:519:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/5/ostream:514:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:508:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:502:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/5/ostream:497:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from ../Personne.h:11,
+                 from ../Annuaire.h:10,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:5172:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5172:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:65: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                 ^
+../Annuaire.cpp:112:79: error: no match for ‘operator<<’ (operand types are ‘const string {aka const std::__cxx11::basic_string<char>}’ and ‘util::Date’)
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                               ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5/ostream:574:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/5/ostream:569:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/ostream:556:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/5/ostream:539:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/5/ostream:519:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+subdir.mk:36 : la recette pour la cible « Annuaire.o » a échouée
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/5/ostream:514:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:508:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<char, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:502:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/5/ostream:497:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from ../Personne.h:11,
+                 from ../Annuaire.h:10,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:5172:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5172:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:108: note:   types ‘std::basic_ostream<_CharT, _Traits>’ and ‘const string {aka const std::__cxx11::basic_string<char>}’ have incompatible cv-qualifiers
+   std::cout << (*it) -> reqNom() == p_nom << (*it) -> reqPrenom() == p_prenom << (*it) -> reqDateNaissance() == p_dateNaissance) << "\n";
+                                                                                                            ^
+In file included from ../Personne.h:12:0,
+                 from ../Annuaire.h:10,
+                 from ../Annuaire.cpp:8:
+../Date.h:57:23: note: candidate: std::ostream& util::operator<<(std::ostream&, const util::Date&)
+  friend std::ostream& operator<<(std::ostream& p_os, const Date& p_date);
+                       ^
+../Date.h:57:23: note:   no known conversion for argument 1 from ‘const string {aka const std::__cxx11::basic_string<char>}’ to ‘std::ostream& {aka std::basic_ostream<char>&}’
+make: *** [Annuaire.o] Erreur 1
+12:30:31 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:30:31 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:30:32 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:30:33 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:31:16 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:31:16 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:31:17 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:31:17 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:31:20 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+12:31:20 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:31:20 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:31:20 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:31:21 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:36:46 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+In file included from ../PersonneException.cpp:1:0:
+../PersonneException.h:6:34: error: expected class-name before ‘std’
+ class PersonneException : Public std::runtime_error
+                                  ^
+../PersonneException.h:6:34: error: expected ‘{’ before ‘std’
+../PersonneException.h:6:39: error: declaration of ‘runtime_error’ not in a namespace surrounding ‘std’
+ class PersonneException : Public std::runtime_error
+                                       ^
+../PersonneException.h:7:1: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+ {
+ ^
+../PersonneException.h:9:26: error: expected primary-expression before ‘const’
+       PersonneException (const std::string& raison);
+                          ^
+../PersonneException.h:9:51: error: ‘PersonneException’ was not declared in this scope
+       PersonneException (const std::string& raison);
+                                                   ^
+../PersonneException.h:9:51: note: suggested alternative:
+../PersonneException.h:6:7: note:   ‘util::PersonneException’
+ class PersonneException : Public std::runtime_error
+       ^
+../PersonneException.h:9:52: error: expected ‘}’ before ‘;’ token
+       PersonneException (const std::string& raison);
+                                                    ^
+../PersonneException.h:13:46: error: expected class-name before ‘PersonneException’
+ class PersonneDejaPresenteException : Public PersonneException
+                                              ^
+../PersonneException.h:13:46: error: expected ‘{’ before ‘PersonneException’
+../PersonneException.h:14:1: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+subdir.mk:39 : la recette pour la cible « PersonneException.o » a échouée
+ {
+ ^
+../PersonneException.h:16:62: error: invalid use of incomplete type ‘class PersonneDejaPresenteException’
+       PersonneDejaPresenteException(const std::string& raison);
+                                                              ^
+../PersonneException.h:13:7: note: forward declaration of ‘class PersonneDejaPresenteException’
+ class PersonneDejaPresenteException : Public PersonneException
+       ^
+../PersonneException.h:16:36: error: expected primary-expression before ‘(’ token
+       PersonneDejaPresenteException(const std::string& raison);
+                                    ^
+../PersonneException.h:16:37: error: expected primary-expression before ‘const’
+       PersonneDejaPresenteException(const std::string& raison);
+                                     ^
+../PersonneException.h:16:63: error: expected ‘}’ before ‘;’ token
+       PersonneDejaPresenteException(const std::string& raison);
+                                                               ^
+../PersonneException.h:17:1: error: expected declaration before ‘}’ token
+ }
+ ^
+make: *** [PersonneException.o] Erreur 1
+12:36:46 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:36:47 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:36:47 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:37:17 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+In file included from ../PersonneException.cpp:1:0:
+../PersonneException.h:8:4: error: ‘Public’ does not name a type
+    Public:
+    ^
+../PersonneException.h:15:4: error: ‘Public’ does not name a type
+    Public:
+    ^
+../PersonneException.h:17:1: error: expected ‘;’ after class definition
+ }
+ ^
+../PersonneException.h:21:4: error: ‘Public’ does not name a type
+    Public:
+    ^
+../PersonneException.h:24:1: error: expected ‘;’ after class definition
+ }
+ ^
+../PersonneException.cpp:4:1: error: prototype for ‘util::PersonneException::PersonneException(const string&)’ does not match any in class ‘util::PersonneException’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+ ^
+In file included from ../PersonneException.cpp:1:0:
+../PersonneException.h:6:7: error: candidates are: util::PersonneException::PersonneException(const util::PersonneException&)
+ class PersonneException : public std::runtime_error
+       ^
+../PersonneException.h:6:7: error:                 util::PersonneException::PersonneException()
+../PersonneException.cpp:8:1: error: prototype for ‘util::PersonneDejaPresenteException::PersonneDejaPresenteException(const string&)’ does not match any in class ‘util::PersonneDejaPresenteException’
+ PersonneDejaPresenteException::PersonneDejaPresenteException(const std::string& raison):PersonneException(raison)
+ ^
+In file included from ../PersonneException.cpp:1:0:
+../PersonneException.h:13:7: error: candidates are: util::PersonneDejaPresenteException::PersonneDejaPresenteException(const util::PersonneDejaPresenteException&)
+ class PersonneDejaPresenteException : public PersonneException
+       ^
+../PersonneException.h:13:7: error:                 util::PersonneDejaPresenteException::PersonneDejaPresenteException()
+../PersonneException.cpp:12:1: error: prototype for ‘util::PersonneAbsenteException::PersonneAbsenteException(const string&)’ does not match any in class ‘util::PersonneAbsenteException’
+ PersonneAbsenteException::PersonneAbsenteException(const std::string& raison):PersonneException(raison)
+subdir.mk:39 : la recette pour la cible « PersonneException.o » a échouée
+ ^
+In file included from ../PersonneException.cpp:1:0:
+../PersonneException.h:19:7: error: candidates are: util::PersonneAbsenteException::PersonneAbsenteException(const util::PersonneAbsenteException&)
+ class PersonneAbsenteException : public PersonneException
+       ^
+../PersonneException.h:19:7: error:                 util::PersonneAbsenteException::PersonneAbsenteException()
+make: *** [PersonneException.o] Erreur 1
+12:37:17 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:37:17 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:37:17 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:37:55 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+../PersonneException.cpp: In constructor ‘util::PersonneException::PersonneException(const string&)’:
+../PersonneException.cpp:4:65: error: class ‘util::PersonneException’ does not have any field named ‘logic_error’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                 ^
+../PersonneException.cpp:4:83: error: no matching function for call to ‘std::runtime_error::runtime_error()’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                                   ^
+In file included from ../PersonneException.h:2:0,
+                 from ../PersonneException.cpp:1:
+/usr/include/c++/5/stdexcept:207:5: note: candidate: std::runtime_error::runtime_error(const std::runtime_error&)
+     runtime_error(const runtime_error&) _GLIBCXX_USE_NOEXCEPT;
+     ^
+/usr/include/c++/5/stdexcept:207:5: note:   candidate expects 1 argument, 0 provided
+/usr/include/c++/5/stdexcept:199:5: note: candidate: std::runtime_error::runtime_error(const string&)
+     runtime_error(const string& __arg);
+     ^
+/usr/include/c++/5/stdexcept:199:5: note:   candidate expects 1 argument, 0 provided
+subdir.mk:39 : la recette pour la cible « PersonneException.o » a échouée
+make: *** [PersonneException.o] Erreur 1
+12:37:55 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:37:56 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:37:56 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:38:04 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+../PersonneException.cpp: In constructor ‘util::PersonneException::PersonneException(const string&)’:
+../PersonneException.cpp:4:65: error: class ‘util::PersonneException’ does not have any field named ‘logic_error’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                 ^
+../PersonneException.cpp:4:83: error: no matching function for call to ‘std::runtime_error::runtime_error()’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                                   ^
+In file included from ../PersonneException.h:2:0,
+                 from ../PersonneException.cpp:1:
+/usr/include/c++/5/stdexcept:207:5: note: candidate: std::runtime_error::runtime_error(const std::runtime_error&)
+     runtime_error(const runtime_error&) _GLIBCXX_USE_NOEXCEPT;
+     ^
+/usr/include/c++/5/stdexcept:207:5: note:   candidate expects 1 argument, 0 provided
+/usr/include/c++/5/stdexcept:199:5: note: candidate: std::runtime_error::runtime_error(const string&)
+     runtime_error(const string& __arg);
+     ^
+/usr/include/c++/5/stdexcept:199:5: note:   candidate expects 1 argument, 0 provided
+make: *** [PersonneException.o] Erreur 1
+subdir.mk:39 : la recette pour la cible « PersonneException.o » a échouée
+12:38:06 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:38:06 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:38:07 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:38:31 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+../PersonneException.cpp: In constructor ‘util::PersonneException::PersonneException(const string&)’:
+../PersonneException.cpp:5:65: error: class ‘util::PersonneException’ does not have any field named ‘logic_error’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                 ^
+../PersonneException.cpp:5:83: error: no matching function for call to ‘std::runtime_error::runtime_error()’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                                   ^
+In file included from ../PersonneException.h:2:0,
+                 from ../PersonneException.cpp:1:
+/usr/include/c++/5/stdexcept:207:5: note: candidate: std::runtime_error::runtime_error(const std::runtime_error&)
+     runtime_error(const runtime_error&) _GLIBCXX_USE_NOEXCEPT;
+     ^
+/usr/include/c++/5/stdexcept:207:5: note:   candidate expects 1 argument, 0 provided
+/usr/include/c++/5/stdexcept:199:5: note: candidate: std::runtime_error::runtime_error(const string&)
+     runtime_error(const string& __arg);
+     ^
+/usr/include/c++/5/stdexcept:199:5: note:   candidate expects 1 argument, 0 provided
+make: *** [PersonneException.o] Erreur 1
+subdir.mk:39 : la recette pour la cible « PersonneException.o » a échouée
+12:38:32 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:38:32 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:38:32 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:38:51 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+../PersonneException.cpp: In constructor ‘util::PersonneException::PersonneException(const string&)’:
+../PersonneException.cpp:5:65: error: class ‘util::PersonneException’ does not have any field named ‘logic_error’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                 ^
+../PersonneException.cpp:5:83: error: no matching function for call to ‘std::runtime_error::runtime_error()’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                                   ^
+In file included from ../PersonneException.h:2:0,
+                 from ../PersonneException.cpp:1:
+/usr/include/c++/5/stdexcept:207:5: note: candidate: std::runtime_error::runtime_error(const std::runtime_error&)
+     runtime_error(const runtime_error&) _GLIBCXX_USE_NOEXCEPT;
+     ^
+/usr/include/c++/5/stdexcept:207:5: note:   candidate expects 1 argument, 0 provided
+/usr/include/c++/5/stdexcept:199:5: note: candidate: std::runtime_error::runtime_error(const string&)
+     runtime_error(const string& __arg);
+     ^
+/usr/include/c++/5/stdexcept:199:5: note:   candidate expects 1 argument, 0 provided
+subdir.mk:39 : la recette pour la cible « PersonneException.o » a échouée
+make: *** [PersonneException.o] Erreur 1
+12:38:51 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:38:51 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:38:52 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:38:56 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+../PersonneException.cpp: In constructor ‘util::PersonneException::PersonneException(const string&)’:
+../PersonneException.cpp:5:65: error: class ‘util::PersonneException’ does not have any field named ‘logic_error’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                 ^
+../PersonneException.cpp:5:83: error: no matching function for call to ‘std::runtime_error::runtime_error()’
+ PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+                                                                                   ^
+In file included from ../PersonneException.h:2:0,
+                 from ../PersonneException.cpp:1:
+/usr/include/c++/5/stdexcept:207:5: note: candidate: std::runtime_error::runtime_error(const std::runtime_error&)
+     runtime_error(const runtime_error&) _GLIBCXX_USE_NOEXCEPT;
+     ^
+/usr/include/c++/5/stdexcept:207:5: note:   candidate expects 1 argument, 0 provided
+/usr/include/c++/5/stdexcept:199:5: note: candidate: std::runtime_error::runtime_error(const string&)
+     runtime_error(const string& __arg);
+     ^
+/usr/include/c++/5/stdexcept:199:5: note:   candidate expects 1 argument, 0 provided
+subdir.mk:39 : la recette pour la cible « PersonneException.o » a échouée
+make: *** [PersonneException.o] Erreur 1
+12:38:56 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:38:56 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:38:56 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:39:50 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+Finished building: ../PersonneException.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:39:51 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:39:52 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:39:52 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:41:41 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:45:21 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&, const util::Date&)’:
+../Annuaire.cpp:112:13: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘std::vector<tp::Personne*>’)
+   std::cout << m_vMembres
+             ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/5/ostream:108:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/5/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/5/ostream:117:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/5/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/5/ostream:127:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/5/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/5/ostream:166:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long int’
+/usr/include/c++/5/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/5/ostream:170:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long unsigned int’
+/usr/include/c++/5/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/5/ostream:174:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘bool’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘short int’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/5/ostream:181:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘short unsigned int’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘int’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/5/ostream:192:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘unsigned int’
+/usr/include/c++/5/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/5/ostream:201:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long long int’
+/usr/include/c++/5/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/5/ostream:205:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long long unsigned int’
+/usr/include/c++/5/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/5/ostream:220:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘double’
+/usr/include/c++/5/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/5/ostream:224:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘float’
+/usr/include/c++/5/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/5/ostream:232:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long double’
+/usr/include/c++/5/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/5/ostream:245:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘const void*’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5/ostream:574:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const unsigned char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/5/ostream:569:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const signed char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/ostream:556:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/5/ostream:539:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   mismatched types ‘const _CharT*’ and ‘std::vector<tp::Personne*>’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/5/ostream:519:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘unsigned char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/5/ostream:514:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘signed char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:508:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:502:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/5/ostream:497:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::vector<tp::Personne*>’)
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from ../Personne.h:11,
+                 from ../Annuaire.h:10,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:5172:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5172:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   ‘std::vector<tp::Personne*>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   std::cout << m_vMembres
+                ^
+subdir.mk:39 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+12:45:22 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:45:22 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:45:22 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:46:55 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&, const util::Date&)’:
+../Annuaire.cpp:112:13: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘std::vector<tp::Personne*>’)
+   std::cout << m_vMembres
+             ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/5/ostream:108:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/5/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/5/ostream:117:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/5/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/5/ostream:127:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/5/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/5/ostream:166:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long int’
+/usr/include/c++/5/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/5/ostream:170:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long unsigned int’
+/usr/include/c++/5/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/5/ostream:174:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘bool’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘short int’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/5/ostream:181:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘short unsigned int’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘int’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/5/ostream:192:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘unsigned int’
+/usr/include/c++/5/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/5/ostream:201:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long long int’
+/usr/include/c++/5/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/5/ostream:205:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long long unsigned int’
+/usr/include/c++/5/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/5/ostream:220:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘double’
+/usr/include/c++/5/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/5/ostream:224:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘float’
+/usr/include/c++/5/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/5/ostream:232:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long double’
+/usr/include/c++/5/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/5/ostream:245:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘const void*’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5/ostream:574:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const unsigned char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/5/ostream:569:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const signed char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/ostream:556:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/5/ostream:539:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   mismatched types ‘const _CharT*’ and ‘std::vector<tp::Personne*>’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/5/ostream:519:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘unsigned char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/5/ostream:514:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘signed char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:508:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:502:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/5/ostream:497:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::vector<tp::Personne*>’)
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from ../Personne.h:11,
+                 from ../Annuaire.h:10,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:5172:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5172:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   ‘std::vector<tp::Personne*>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   std::cout << m_vMembres
+                ^
+subdir.mk:39 : la recette pour la cible « Annuaire.o » a échouée
+make: *** [Annuaire.o] Erreur 1
+12:46:55 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:46:55 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:46:55 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:47:00 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&, const util::Date&)’:
+../Annuaire.cpp:112:13: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘std::vector<tp::Personne*>’)
+   std::cout << m_vMembres
+             ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/5/ostream:108:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/5/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/5/ostream:117:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/5/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/5/ostream:127:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/5/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/5/ostream:166:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long int’
+/usr/include/c++/5/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/5/ostream:170:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long unsigned int’
+/usr/include/c++/5/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/5/ostream:174:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘bool’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘short int’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/5/ostream:181:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘short unsigned int’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘int’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/5/ostream:192:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘unsigned int’
+/usr/include/c++/5/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/5/ostream:201:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long long int’
+/usr/include/c++/5/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/5/ostream:205:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long long unsigned int’
+/usr/include/c++/5/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/5/ostream:220:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘double’
+/usr/include/c++/5/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/5/ostream:224:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘float’
+/usr/include/c++/5/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/5/ostream:232:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘long double’
+/usr/include/c++/5/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/5/ostream:245:7: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘const void*’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘std::vector<tp::Personne*>’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5/ostream:574:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const unsigned char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/5/ostream:569:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const signed char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/ostream:556:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/istream:39,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+subdir.mk:39 : la recette pour la cible « Annuaire.o » a échouée
+     ^
+/usr/include/c++/5/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘const char*’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/5/ostream:539:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   mismatched types ‘const _CharT*’ and ‘std::vector<tp::Personne*>’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/5/ostream:519:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘unsigned char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/5/ostream:514:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘signed char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:508:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:502:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   cannot convert ‘((tp::Annuaire*)this)->tp::Annuaire::m_vMembres’ (type ‘std::vector<tp::Personne*>’) to type ‘char’
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/istream:39:0,
+                 from /usr/include/c++/5/sstream:38,
+                 from ../Annuaire.cpp:13:
+/usr/include/c++/5/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/5/ostream:497:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::vector<tp::Personne*>’)
+   std::cout << m_vMembres
+                ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from ../Personne.h:11,
+                 from ../Annuaire.h:10,
+                 from ../Annuaire.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:5172:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5172:5: note:   template argument deduction/substitution failed:
+../Annuaire.cpp:112:16: note:   ‘std::vector<tp::Personne*>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   std::cout << m_vMembres
+                ^
+make: *** [Annuaire.o] Erreur 1
+12:47:00 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:47:00 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:47:00 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:51:16 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+Finished building: ../PersonneException.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:51:16 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:51:17 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:51:17 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:51:20 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:51:42 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:52:04 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:52:08 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:52:08 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:52:09 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:52:09 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:52:10 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:54:05 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+12:54:05 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:54:05 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:54:05 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:54:08 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:54:10 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+../Annuaire.cpp: In member function ‘void tp::Annuaire::supprimerPersonne(const string&, const string&, const util::Date&)’:
+../Annuaire.cpp:107:9: warning: unused variable ‘grandeur’ [-Wunused-variable]
+  size_t grandeur = m_vMembres.size();
+         ^
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:54:10 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:54:11 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:54:11 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:54:12 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:54:13 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:54:14 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:54:54 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:54:56 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:55:00 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+12:55:00 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+12:55:01 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+12:55:01 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:55:03 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+12:55:03 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+12:55:03 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+12:55:03 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:55:04 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:55:06 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+12:56:02 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+12:56:21 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:06:13 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:10:25 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:11:02 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:11:24 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:12:59 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:13:07 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:13:18 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:60:13: error: base operand of ‘->’ has non-pointer type ‘util::PersonneDejaPresenteException’
+   cerr << e -> what() << endl;
+             ^
+subdir.mk:18 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+13:13:24 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:13:52 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+13:13:53 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+13:13:53 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+13:13:53 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:14:00 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+13:14:09 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:14:22 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:15:42 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:16:07 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:16:41 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+13:16:41 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+13:16:42 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+13:16:42 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:16:51 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:17:23 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:17:36 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./main.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:18:28 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../mainTestyFuck.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mainTestyFuck.d" -MT"mainTestyFuck.o" -o "mainTestyFuck.o" "../mainTestyFuck.cpp"
+Finished building: ../mainTestyFuck.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./mainTestyFuck.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:21:00 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../mainTestyFuck.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mainTestyFuck.d" -MT"mainTestyFuck.o" -o "mainTestyFuck.o" "../mainTestyFuck.cpp"
+Finished building: ../mainTestyFuck.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./mainTestyFuck.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:26:13 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+Finished building: ../PersonneException.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+13:26:13 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+13:26:15 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+13:26:15 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./mainTestyFuck.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:26:20 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+13:26:20 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+13:26:20 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+13:26:20 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+13:26:23 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+make: rien à faire pour « all ».
+13:26:23 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».
+13:26:23 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+make: rien à faire pour « all ».
+13:26:23 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+make: rien à faire pour « all ».
+13:34:23 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+13:39:40 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+13:41:49 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+./AnnuaireTesteur.o : Dans la fonction « AnnuaireTest_Ajouter_Test::TestBody() » :
+/home/etudiant/Bureau/TP4/TP4Test/Debug/../AnnuaireTesteur.cpp:108 : référence indéfinie vers « tp::Annuaire::reqVecteur() const »
+/home/etudiant/Bureau/TP4/TP4Test/Debug/../AnnuaireTesteur.cpp:112 : référence indéfinie vers « tp::Annuaire::reqVecteur() const »
+./AnnuaireTesteur.o : Dans la fonction « AnnuaireTest_Supprimer_Test::TestBody() » :
+/home/etudiant/Bureau/TP4/TP4Test/Debug/../AnnuaireTesteur.cpp:137 : référence indéfinie vers « tp::Annuaire::reqVecteur() const »
+/home/etudiant/Bureau/TP4/TP4Test/Debug/../AnnuaireTesteur.cpp:141 : référence indéfinie vers « tp::Annuaire::reqVecteur() const »
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « TP4Test » a échouée
+make: *** [TP4Test] Erreur 1
+13:42:00 **** Incremental Build of configuration Debug for project TP4Lib ****
+make all 
+Building file: ../Annuaire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Annuaire.d" -MT"Annuaire.o" -o "Annuaire.o" "../Annuaire.cpp"
+Finished building: ../Annuaire.cpp
+ 
+Building target: libTP4Lib.a
+Invoking: GCC Archiver
+ar -r  "libTP4Lib.a"  ./Annuaire.o ./ContratException.o ./Date.o ./Entraineur.o ./Joueur.o ./Personne.o ./PersonneException.o ./validationFormat.o   
+ar: création de libTP4Lib.a
+Finished building target: libTP4Lib.a
+ 
+13:42:00 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+Building target: TP4Test
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4Test"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lTP4Lib -lgtest_main -lgtest -lpthread
+Finished building target: TP4Test
+ 
+13:42:01 **** Incremental Build of configuration Debug for project TP4main ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TP4main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TP4main"  ./main.o   -lTP4Lib
+Finished building target: TP4main
+ 
+13:42:01 **** Incremental Build of configuration Debug for project TestyFuck ****
+make all 
+Building file: ../mainTestyFuck.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/TP4/TP4Lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mainTestyFuck.d" -MT"mainTestyFuck.o" -o "mainTestyFuck.o" "../mainTestyFuck.cpp"
+Finished building: ../mainTestyFuck.cpp
+ 
+Building target: TestyFuck
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4/TP4Lib/Debug" -o "TestyFuck"  ./mainTestyFuck.o   -lTP4Lib
+Finished building target: TestyFuck
+ 
+13:42:03 **** Incremental Build of configuration Debug for project TP4Test ****
+make all 
+make: rien à faire pour « all ».

@@ -1,0 +1,33 @@
+/**
+ * \file main.cpp
+ * \brief 
+ * \author François Levasseur : frlev144 : 111 098 378
+ * \date 2017-04-12 
+ */
+
+#include "Annuaire.h"
+#include "Joueur.h"
+#include "iostream"
+#include <string>
+#include <vector>
+
+using namespace std;
+using namespace util;
+using namespace tp;
+
+int main(){
+	Annuaire yolo;
+	yolo.asgNomClub("tabarnak");
+
+	vector<Personne*> vecteurAsti = yolo.reqVecteur() ;
+
+	for (size_t i = 0; i < vecteurAsti.size() ; i++){
+		cout << vecteurAsti[i] << endl;
+	}
+
+
+
+	return 0;
+}
+
+

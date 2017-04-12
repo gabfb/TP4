@@ -1,0 +1,22 @@
+#include "PersonneException.h"
+#include <exception>
+namespace util
+{
+PersonneException::PersonneException(const std::string& raison):logic_error(raison)
+{
+}
+
+PersonneDejaPresenteException::PersonneDejaPresenteException(const std::string& raison):PersonneException(raison)
+{
+}
+
+PersonneAbsenteException::PersonneAbsenteException(const std::string& raison):PersonneException(raison)
+{
+}
+
+
+}
+
+
+
+

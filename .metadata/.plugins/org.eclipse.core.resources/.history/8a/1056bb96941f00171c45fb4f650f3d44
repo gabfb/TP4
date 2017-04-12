@@ -1,0 +1,25 @@
+/**
+ * \file main.cpp
+ * \brief 
+ * \author François Levasseur : frlev144 : 111 098 378
+ * \date 2017-04-12 
+ */
+
+#include "Annuaire.h"
+#include "Joueur.h"
+#include "iostream"
+
+using namespace std;
+using namespace util;
+using namespace tp;
+
+int main(){
+	Annuaire yolo;
+	yolo.asgNomClub("tabarnak");
+	cout << yolo.reqNomClub() << endl;
+
+
+	return 0;
+}
+
+

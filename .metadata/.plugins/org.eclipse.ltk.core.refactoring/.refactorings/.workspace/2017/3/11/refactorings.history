@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Lab8&apos; to &apos;SphereLib&apos;" description="Rename resource &apos;Lab8&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Lab8" name="SphereLib" stamp="1489858954266" updateReferences="true"/>
+</session>
