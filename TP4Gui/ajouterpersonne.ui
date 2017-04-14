@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>271</width>
+    <height>172</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,20 +16,24 @@
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>40</y>
+     <x>0</x>
+     <y>0</y>
      <width>271</width>
-     <height>201</height>
+     <height>171</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLineEdit" name="typelineedit"/>
+     <widget class="QPushButton" name="pushButtonAjouterJoueur">
+      <property name="text">
+       <string>Ajouter Joueur</string>
+      </property>
+     </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButtonOK">
+     <widget class="QPushButton" name="pushButtonAjouterEntraineur">
       <property name="text">
-       <string>OK</string>
+       <string>Ajouter Entraineur</string>
       </property>
      </widget>
     </item>

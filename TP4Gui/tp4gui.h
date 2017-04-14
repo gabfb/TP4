@@ -4,6 +4,8 @@
 #include <QtGui/QMainWindow>
 #include "ui_tp4gui.h"
 #include "Annuaire.h"
+#include "Personne.h"
+#include <vector>
 
 class TP4Gui : public QMainWindow
 {
@@ -13,6 +15,8 @@ public:
     TP4Gui(QWidget *parent = 0);
     ~TP4Gui();
 
+
+
 private slots:
     void SupprimerPersonnefct();
     void AjouterPersonnefct();
@@ -20,10 +24,10 @@ private slots:
     void AjouterEntraineurfct();
 
 
-
 private:
     Ui::TP4GuiClass ui;
     tp::Annuaire m_annuaire;
+
 };
 
 #endif // TP4GUI_H

@@ -3,6 +3,7 @@
 
 #include <QtGui/QDialog>
 #include "ui_ajouterjoueur.h"
+#include "Date.h"
 
 class AjouterJoueur : public QDialog
 {
@@ -11,6 +12,15 @@ class AjouterJoueur : public QDialog
 public:
     AjouterJoueur(QWidget *parent = 0);
     ~AjouterJoueur();
+
+    QString reqNom();
+    QString reqPrenom();
+    util::Date reqDate();
+    QString reqNum();
+    QString reqPosition();
+
+private slots:
+	void validerFormulaire();
 
 private:
     Ui::AjouterJoueurClass ui;

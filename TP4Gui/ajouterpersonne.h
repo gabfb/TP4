@@ -14,8 +14,11 @@ public:
     QString reqType() const;
 private slots:
     void validerFormulaire();
+    void ajouterJoueurfct();
+    void ajouterEntraineurfct();
 private:
     Ui::AjouterPersonneClass ui;
+    QString m_type;
 };
 
 #endif // AJOUTERPERSONNE_H

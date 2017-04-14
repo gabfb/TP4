@@ -35,8 +35,8 @@ public:
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *verticalLayout_2;
     QSpacerItem *verticalSpacer;
-    QPushButton *AjouterPersonne;
     QPushButton *SupprimerPersonne;
+    QPushButton *AjouterPersonne;
     QPushButton *Quitter;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -45,12 +45,12 @@ public:
     {
         if (TP4GuiClass->objectName().isEmpty())
             TP4GuiClass->setObjectName(QString::fromUtf8("TP4GuiClass"));
-        TP4GuiClass->resize(800, 600);
+        TP4GuiClass->resize(481, 334);
         centralwidget = new QWidget(TP4GuiClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(0, 0, 581, 551));
+        verticalLayoutWidget->setGeometry(QRect(0, 0, 321, 281));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -61,7 +61,7 @@ public:
 
         verticalLayoutWidget_2 = new QWidget(centralwidget);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(590, 0, 160, 551));
+        verticalLayoutWidget_2->setGeometry(QRect(320, 0, 160, 281));
         verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -69,15 +69,15 @@ public:
 
         verticalLayout_2->addItem(verticalSpacer);
 
-        AjouterPersonne = new QPushButton(verticalLayoutWidget_2);
-        AjouterPersonne->setObjectName(QString::fromUtf8("AjouterPersonne"));
-
-        verticalLayout_2->addWidget(AjouterPersonne);
-
         SupprimerPersonne = new QPushButton(verticalLayoutWidget_2);
         SupprimerPersonne->setObjectName(QString::fromUtf8("SupprimerPersonne"));
 
         verticalLayout_2->addWidget(SupprimerPersonne);
+
+        AjouterPersonne = new QPushButton(verticalLayoutWidget_2);
+        AjouterPersonne->setObjectName(QString::fromUtf8("AjouterPersonne"));
+
+        verticalLayout_2->addWidget(AjouterPersonne);
 
         Quitter = new QPushButton(verticalLayoutWidget_2);
         Quitter->setObjectName(QString::fromUtf8("Quitter"));
@@ -87,7 +87,7 @@ public:
         TP4GuiClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(TP4GuiClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 27));
+        menubar->setGeometry(QRect(0, 0, 481, 27));
         TP4GuiClass->setMenuBar(menubar);
         statusbar = new QStatusBar(TP4GuiClass);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -102,8 +102,8 @@ public:
     void retranslateUi(QMainWindow *TP4GuiClass)
     {
         TP4GuiClass->setWindowTitle(QApplication::translate("TP4GuiClass", "MainWindow", 0, QApplication::UnicodeUTF8));
-        AjouterPersonne->setText(QApplication::translate("TP4GuiClass", "Ajouter", 0, QApplication::UnicodeUTF8));
         SupprimerPersonne->setText(QApplication::translate("TP4GuiClass", "Supprimer", 0, QApplication::UnicodeUTF8));
+        AjouterPersonne->setText(QApplication::translate("TP4GuiClass", "Ajouter", 0, QApplication::UnicodeUTF8));
         Quitter->setText(QApplication::translate("TP4GuiClass", "Quitter", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

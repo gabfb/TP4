@@ -22,7 +22,7 @@ static const uint qt_meta_data_AjouterPersonne[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -31,12 +31,15 @@ static const uint qt_meta_data_AjouterPersonne[] = {
 
  // slots: signature, parameters, type, tag, flags
       17,   16,   16,   16, 0x08,
+      37,   16,   16,   16, 0x08,
+      56,   16,   16,   16, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_AjouterPersonne[] = {
     "AjouterPersonne\0\0validerFormulaire()\0"
+    "ajouterJoueurfct()\0ajouterEntraineurfct()\0"
 };
 
 void AjouterPersonne::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -46,6 +49,8 @@ void AjouterPersonne::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         AjouterPersonne *_t = static_cast<AjouterPersonne *>(_o);
         switch (_id) {
         case 0: _t->validerFormulaire(); break;
+        case 1: _t->ajouterJoueurfct(); break;
+        case 2: _t->ajouterEntraineurfct(); break;
         default: ;
         }
     }
@@ -84,9 +89,9 @@ int AjouterPersonne::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 3;
     }
     return _id;
 }

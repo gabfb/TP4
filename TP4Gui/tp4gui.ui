@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>481</width>
+    <height>334</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>581</width>
-      <height>551</height>
+      <width>321</width>
+      <height>281</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -32,10 +32,10 @@
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>320</x>
       <y>0</y>
       <width>160</width>
-      <height>551</height>
+      <height>281</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -53,16 +53,16 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="AjouterPersonne">
+      <widget class="QPushButton" name="SupprimerPersonne">
        <property name="text">
-        <string>Ajouter</string>
+        <string>Supprimer</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="SupprimerPersonne">
+      <widget class="QPushButton" name="AjouterPersonne">
        <property name="text">
-        <string>Supprimer</string>
+        <string>Ajouter</string>
        </property>
       </widget>
      </item>
@@ -81,7 +81,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>481</width>
      <height>27</height>
     </rect>
    </property>

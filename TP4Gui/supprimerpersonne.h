@@ -3,6 +3,8 @@
 
 #include <QtGui/QDialog>
 #include "ui_supprimerpersonne.h"
+#include "Date.h"
+#include "Annuaire.h"
 
 class SupprimerPersonne : public QDialog
 {
@@ -12,8 +14,18 @@ public:
     SupprimerPersonne(QWidget *parent = 0);
     ~SupprimerPersonne();
 
+    QString reqNom();
+    QString reqPrenom();
+    util::Date reqDate();
+private slots:
+	void validerFormulaire();
+
 private:
     Ui::SupprimerPersonneClass ui;
+
+    QString m_nom;
+    QString m_prenom;
+    util::Date m_dateNaissance;
 };
 
 #endif // SUPPRIMERPERSONNE_H

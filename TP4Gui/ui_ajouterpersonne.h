@@ -15,7 +15,6 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QDialog>
 #include <QtGui/QHeaderView>
-#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -27,31 +26,31 @@ class Ui_AjouterPersonneClass
 public:
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
-    QLineEdit *typelineedit;
-    QPushButton *pushButtonOK;
+    QPushButton *pushButtonAjouterJoueur;
+    QPushButton *pushButtonAjouterEntraineur;
 
     void setupUi(QDialog *AjouterPersonneClass)
     {
         if (AjouterPersonneClass->objectName().isEmpty())
             AjouterPersonneClass->setObjectName(QString::fromUtf8("AjouterPersonneClass"));
-        AjouterPersonneClass->resize(400, 300);
+        AjouterPersonneClass->resize(271, 172);
         verticalLayoutWidget = new QWidget(AjouterPersonneClass);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(60, 40, 271, 201));
+        verticalLayoutWidget->setGeometry(QRect(0, 0, 271, 171));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        typelineedit = new QLineEdit(verticalLayoutWidget);
-        typelineedit->setObjectName(QString::fromUtf8("typelineedit"));
+        pushButtonAjouterJoueur = new QPushButton(verticalLayoutWidget);
+        pushButtonAjouterJoueur->setObjectName(QString::fromUtf8("pushButtonAjouterJoueur"));
 
-        verticalLayout->addWidget(typelineedit);
+        verticalLayout->addWidget(pushButtonAjouterJoueur);
 
-        pushButtonOK = new QPushButton(verticalLayoutWidget);
-        pushButtonOK->setObjectName(QString::fromUtf8("pushButtonOK"));
+        pushButtonAjouterEntraineur = new QPushButton(verticalLayoutWidget);
+        pushButtonAjouterEntraineur->setObjectName(QString::fromUtf8("pushButtonAjouterEntraineur"));
 
-        verticalLayout->addWidget(pushButtonOK);
+        verticalLayout->addWidget(pushButtonAjouterEntraineur);
 
 
         retranslateUi(AjouterPersonneClass);
@@ -62,7 +61,8 @@ public:
     void retranslateUi(QDialog *AjouterPersonneClass)
     {
         AjouterPersonneClass->setWindowTitle(QApplication::translate("AjouterPersonneClass", "AjouterPersonne", 0, QApplication::UnicodeUTF8));
-        pushButtonOK->setText(QApplication::translate("AjouterPersonneClass", "OK", 0, QApplication::UnicodeUTF8));
+        pushButtonAjouterJoueur->setText(QApplication::translate("AjouterPersonneClass", "Ajouter Joueur", 0, QApplication::UnicodeUTF8));
+        pushButtonAjouterEntraineur->setText(QApplication::translate("AjouterPersonneClass", "Ajouter Entraineur", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
